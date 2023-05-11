@@ -11,7 +11,7 @@ const Login = () => {
         <div>
             <input type="text" placeholder='email'/>
             <input type="password" placeholder='password'/>
-            <button>로그인</button>
+            <button>로그인zz</button>
             <button onClick={googleAuthLoginClickHandle}><FcGoogle /></button>
         </div>
     );
