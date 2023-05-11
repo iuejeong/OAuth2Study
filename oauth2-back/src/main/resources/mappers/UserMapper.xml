@@ -59,5 +59,13 @@
 			ut.email = #{email}
 	</select>
 	
+	<update id="updateProvider" parameterType="com.study.oauth2.entity.User">
+		update user_tb
+		set
+			provider = #{provider}
+		where
+			user_id = #{userId}
+	</update>
+	
 </mapper>
 

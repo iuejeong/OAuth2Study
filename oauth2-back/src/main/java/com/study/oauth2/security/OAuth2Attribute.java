@@ -50,6 +50,7 @@ public class OAuth2Attribute {
         return OAuth2Attribute.builder()
                 .name((String) kakaoProfile.get("nickname"))
                 .email((String) kakaoAccount.get("email"))
+                .provider((String) provider)
                 .attributes(kakaoAccount)
                 .build();
     }
@@ -60,6 +61,7 @@ public class OAuth2Attribute {
         return OAuth2Attribute.builder()
                 .name((String) response.get("name"))
                 .email((String) response.get("email"))
+                .provider((String) provider)
                 .attributes(response)
                 .build();
     }
